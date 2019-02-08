@@ -1,0 +1,17 @@
+﻿<Window x:Class="MyPlanner.AddTask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPlanner"
+        mc:Ignorable="d"
+        Title="addTask" Height="451.5" Width="473.5" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFE4E4E4" HorizontalAlignment="Left" Width="474" Margin="0,0,0,0">
+        <TextBox x:Name="nameTxt" HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="40" Margin="61,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontSize="20" Background="#FFF1F1F1" BorderBrush="#FF0078D7"/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="61,180,0,0" VerticalAlignment="Top" Width="350" Height="40" FontSize="20" BorderBrush="{x:Null}" Background="White" />
+        <Label x:Name="okBtn" Content="Ok" HorizontalAlignment="Left" Margin="58,357,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="171" Background="#FFF1F1F1" FontSize="20" MouseEnter="okBtn_MouseEnter" MouseLeave="okBtn_MouseLeave" MouseDown="okBtn_MouseDown"/>
+        <Label x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Left" Margin="237,357,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="171" Background="#FFF1F1F1" BorderBrush="#FF1F4DB0" FontSize="20" MouseDown="CancelBtn_MouseDown" MouseEnter="CancelBtn_MouseEnter" MouseLeave="CancelBtn_MouseLeave"/>
+        <Label Content="Название задачи" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="61,43,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="350" Height="27" Background="#FFF1F1F1" FontSize="14"/>
+        <Label Content="Дата" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="61,148,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="350" Height="27" Background="#FFF1F1F1" FontSize="14"/>
+    </Grid>
+</Window>
