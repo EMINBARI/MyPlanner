@@ -76,8 +76,7 @@ namespace MyPlanner
             
             nPlan.Name = nameTxt.Text;
             nPlan.Date = chekedDate;
-           
-            if (nameTxt.Text == "")
+            if(String.IsNullOrEmpty(nameTxt.Text))
             {
                 MessageBox.Show("Введите название задачи!", "Message", MessageBoxButton.OK);
 

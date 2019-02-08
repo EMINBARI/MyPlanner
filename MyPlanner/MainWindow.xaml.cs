@@ -37,7 +37,7 @@ namespace MyPlanner
 
         private void IsVisibleLabel()
         {
-            if (allPlans.Count == 0)
+            if (allPlans.Any())
             {
                 noTasksLabel.Visibility = Visibility.Visible;
 
